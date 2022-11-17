@@ -3,3 +3,5 @@ tableone
 scikit-learn
 numpy
 pandas
+ipykernel
+seaborn
