@@ -30,3 +30,146 @@ ADMISSION_AGE_COL = 'admission_age'
 ADMISSION_YEAR_COL = 'admission_year'
 ADMISSION_COUNT_COL = 'admissions_count'
 ITEM_ID_COL = 'itemid'
+NIGHT_ADMISSION_FLAG = 'night_admission' 
+MARITAL_STATUS_COL = 'marital_status'
+STANDARDIZED_AGE_COL = 'standardized_age'
+COEF_COL = '   coef   '
+STDERR_COL = ' std err '
+DIRECT_IND_COL = 'direct_emrgency_flag'
+PREV_ADMISSION_IND_COL = 'last_less_than_diff'
+ADMISSION_COUNT_GROUP_COL = ADMISSION_COUNT_COL + '_group'
+
+
+DISCHARGE_REGROUPING_DICT = {
+    'HOME': 'HOME',
+    'HOME HEALTH CARE': 'HOME',
+    'SKILLED NURSING FACILITY': 'FURTHER TREATMENT',
+    'DIED': 'DIED',
+    'REHAB': 'HOME',
+    'CHRONIC/LONG TERM ACUTE CARE': 'FURTHER TREATMENT',
+    'HOSPICE': 'FURTHER TREATMENT',
+    'AGAINST ADVICE': 'CENSORED',
+    'ACUTE HOSPITAL': 'FURTHER TREATMENT',
+    'PSYCH FACILITY': 'FURTHER TREATMENT',
+    'OTHER FACILITY': 'FURTHER TREATMENT',
+    'ASSISTED LIVING': 'HOME',
+    'HEALTHCARE FACILITY': 'FURTHER TREATMENT',
+}
+
+RACE_REGROUPING_DICT = {
+    'WHITE': 'WHITE',
+    'UNKNOWN': 'OTHER',
+    'BLACK/AFRICAN AMERICAN': 'BLACK',
+    'OTHER': 'OTHER',
+    'ASIAN': 'ASIAN',
+    'WHITE - OTHER EUROPEAN': 'WHITE',
+    'HISPANIC/LATINO - PUERTO RICAN': 'HISPANIC',
+    'HISPANIC/LATINO - DOMINICAN': 'HISPANIC',
+    'ASIAN - CHINESE': 'ASIAN',
+    'BLACK/CARIBBEAN ISLAND': 'BLACK',
+    'BLACK/AFRICAN': 'BLACK',
+    'BLACK/CAPE VERDEAN': 'BLACK',
+    'PATIENT DECLINED TO ANSWER': 'OTHER',
+    'WHITE - BRAZILIAN': 'WHITE',
+    'PORTUGUESE': 'HISPANIC', 
+    'ASIAN - SOUTH EAST ASIAN': 'ASIAN',
+    'WHITE - RUSSIAN': 'WHITE',
+    'ASIAN - ASIAN INDIAN': 'ASIAN',
+    'WHITE - EASTERN EUROPEAN': 'WHITE',
+    'AMERICAN INDIAN/ALASKA NATIVE': 'OTHER',
+    'HISPANIC/LATINO - GUATEMALAN': 'HISPANIC',
+    'HISPANIC/LATINO - MEXICAN': 'HISPANIC',
+    'HISPANIC/LATINO - SALVADORAN': 'HISPANIC',
+    'SOUTH AMERICAN': 'HISPANIC',
+    'NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER': 'OTHER',
+    'HISPANIC/LATINO - COLUMBIAN': 'HISPANIC',
+    'HISPANIC/LATINO - CUBAN': 'HISPANIC',
+    'ASIAN - KOREAN': 'ASIAN',
+    'HISPANIC/LATINO - HONDURAN': 'HISPANIC',
+    'HISPANIC/LATINO - CENTRAL AMERICAN': 'HISPANIC',
+    'UNABLE TO OBTAIN': 'OTHER',
+    'HISPANIC OR LATINO': 'HISPANIC'
+}
+
+# 'MCH': 'Mean Cell Hemoglobin', 
+# 'MCHC': 'Mean Cell Hemoglobin Concentration',
+table1_rename_columns = {
+    'AnionGap': 'Anion Gap', 
+    'Bicarbonate': 'Bicarbonate', 
+    'CalciumTotal': 'Calcium Total', 
+    'Chloride': 'Chloride', 
+    'Creatinine': 'Creatinine',
+    'Glucose': 'Glucose', 
+    'Magnesium': 'Magnesium', 
+    'Phosphate': 'Phosphate', 
+    'Potassium': 'Potassium', 
+    'Sodium': 'Sodium',
+    'UreaNitrogen': 'Urea Nitrogen', 
+    'Hematocrit': 'Hematocrit', 
+    'Hemoglobin': 'Hemoglobin', 
+    'MCH': 'MCH', 
+    'MCHC': 'MCHC', 
+    'MCV': 'MCV',
+    'PlateletCount': 'Platelet Count', 
+    'RDW': 'RDW', 
+    'RedBloodCells': 'Red Blood Cells', 
+    'WhiteBloodCells': 'White Blood Cells',
+    NIGHT_ADMISSION_FLAG: 'Night Admission', 
+    GENDER_COL: 'Sex', 
+    DIRECT_IND_COL: 'Direct Emergency',
+    PREV_ADMISSION_IND_COL: 'Previous Admission This Month', 
+    ADMISSION_AGE_COL: 'Admission Age', 
+    INSURANCE_COL: 'Insurance', 
+    MARITAL_STATUS_COL: 'Marital Status',
+    RACE_COL: 'Race', 
+    ADMISSION_COUNT_GROUP_COL: 'Admissions Number', 
+    LOS_DAYS_COL: 'LOS (days)', 
+    DISCHARGE_LOCATION_COL: 'Discharge Location'
+}
+
+table1_rename_sex = {0: 'Male', 1: 'Female'}
+table1_rename_race = {'ASIAN': 'Asian', 'BLACK': 'Black', 'HISPANIC': 'Hispanic', 'OTHER': 'Other', 'WHITE': 'White'}
+table1_rename_marital = {'SINGLE': 'Single', 'MARRIED': 'Married', 'DIVORCED': 'Divorced', 'WIDOWED': 'Widowed'}
+table1_rename_yes_no = {0: 'No', 1: 'Yes'}
+table1_rename_normal_abnormal = {0: 'Normal', 1: 'Abnormal'}
+table1_rename_discharge = {1: 'Home', 2: 'Further Treatment', 3: 'Died', 0: 'Censored'} 
+
+
+rename_beta_index = {
+ 'AdmsCount 2': 'Admissions Number 2',
+ 'AdmsCount 3up': 'Admissions Number 3+',
+ 'AnionGap': 'Anion Gap',
+ 'Bicarbonate': 'Bicarbonate',
+ 'CalciumTotal': 'Calcium Total',
+ 'Chloride': 'Chloride',
+ 'Creatinine': 'Creatinine',
+ 'Ethnicity BLACK': 'Black',
+ 'Ethnicity HISPANIC': 'Hispanic',
+ 'Ethnicity OTHER': 'Other (Race)',
+ 'Ethnicity WHITE': 'White',
+ 'Glucose': 'Glucose',
+ 'Hematocrit': 'Hematocrit',
+ 'Hemoglobin': 'Hemoglobin',
+ 'Insurance Medicare': 'Medicare',
+ 'Insurance Other': 'Other (Insurance)',
+ 'MCH': 'MCH',
+ 'MCHC': 'MCHC',
+ 'MCV': 'MCV',
+ 'Magnesium': 'Magnesium',
+ 'Marital MARRIED': 'Married',
+ 'Marital SINGLE': 'Single',
+ 'Marital WIDOWED': 'Widowed',
+ 'Phosphate': 'Phosphate',
+ 'PlateletCount': 'Platelet Count',
+ 'Potassium': 'Potassium',
+ 'RDW': 'RDW',
+ 'RedBloodCells': 'Red Blood Cells',
+ 'Sodium': 'Sodium',
+ 'UreaNitrogen': 'Urea Nitrogen',
+ 'WhiteBloodCells': 'White Blood Cells',
+ 'direct emrgency flag': 'Direct Emergency',
+ 'gender': 'Sex',
+ 'last less than diff': 'Recent Admission',
+ 'night admission': 'Night Admission',
+ 'standardized age': 'Standardized Age',
+}
