@@ -6,7 +6,7 @@ A Python code for the paper:
 
 [Tomer Meir](https://tomer1812.github.io/) and [Malka Gorfine](https://www.tau.ac.il/~gorfinem/)
 
-The simulations and MIMIC-IV analysis can be replicated by running the code in the notebooks directory using the docker image built from the Dockerfile. 
+The simulations and MIMIC-IV analysis can be replicated by cloning the repository, running the code in the notebooks directory using the docker image built from the Dockerfile of this project. 
 
 The MIMIC-IV (2.0) is accessible at [PhysioNet](https://physionet.org/content/mimiciv/2.0/) and subjected to PhysioNet credentials.
 
