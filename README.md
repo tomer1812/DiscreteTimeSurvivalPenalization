@@ -6,6 +6,8 @@ A Python code for the paper:
 
 The simulations and MIMIC-IV analysis can be replicated by cloning the repository, running the code in the notebooks directory using the docker image built from the Dockerfile of this project. 
 
+An example for an R implementation of the proposed approach is available in src/Implementation-Example.R
+
 The MIMIC-IV (2.0) dataset is accessible at [PhysioNet](https://physionet.org/content/mimiciv/2.0/) and subjected to PhysioNet credentials.
 
 This work is based on PyDTS Python Package:
