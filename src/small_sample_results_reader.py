@@ -78,7 +78,7 @@ for idn, n_patients in enumerate(n_patients_list):
     alpha_res_df = pd.read_csv(os.path.join(OUTPUT_DIR, case))
 
     ax = axes[int(idn % 2)]
-    ax.set_title(f'N={n_patients}', fontsize=15)
+    ax.set_title(f'n={n_patients}', fontsize=15)
     ax.tick_params(axis='both', which='major', labelsize=15)
     ax.tick_params(axis='both', which='minor', labelsize=15)
 
