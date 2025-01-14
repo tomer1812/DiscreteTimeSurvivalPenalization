@@ -1,0 +1,6 @@
+install.packages("tidyverse", repos = "https://cloud.r-project.org/")
+install.packages("survival", repos = "https://cloud.r-project.org/")
+install.packages("FSA", repos = "https://cloud.r-project.org/")
+install.packages("foreach", repos = "https://cloud.r-project.org/")
+install.packages("doParallel", repos = "https://cloud.r-project.org/")
+install.packages("dplyr", repos = "https://cloud.r-project.org/")
