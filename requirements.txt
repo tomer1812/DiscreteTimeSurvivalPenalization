@@ -1,4 +1,4 @@
-pydts
+pydts==0.9.6
 tableone
 scikit-learn
 numpy
