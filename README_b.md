@@ -30,7 +30,7 @@ Check out PyDTS GitHub repository which implements the proposed approach:
 3. Install package dependencies:
    ```bash
    pip install -r requirements.txt
-   Rscript requirements.R
+   conda install r-tidyverse r-survival r-FSA r-foreach r-doParallel r-dplyr
    ```
 
 4. Ensure the dependencies are installed in the correct Anaconda environment.
