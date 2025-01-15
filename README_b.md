@@ -7,6 +7,10 @@ This is a README file for the code associated with the paper:
 Check out the paper GitHub repository as well:
 [https://github.com/tomer1812/DiscreteTimeSurvivalPenalization](https://github.com/tomer1812/DiscreteTimeSurvivalPenalization)
 
+Check out PyDTS GitHub repository which implements the proposed approach:
+[https://github.com/tomer1812/pydts](https://github.com/tomer1812/pydts)
+
+
 ## Instructions
 
 ### Environment Setup
@@ -41,9 +45,9 @@ Check out the paper GitHub repository as well:
 
 2. Open Jupyter Notebook.
 
-3. Ensure parameters are set as desired, particularly the `OUTPUT_DIR`.
+3. Ensure parameters are set as desired, particularly the output directory or output filename.
 
-4. Set the IPython kernel interpreter.
+4. Set the IPython kernel interpreter to dtsp-env.
 
 5. Run the cells in the notebook.
 
@@ -51,7 +55,7 @@ Check out the paper GitHub repository as well:
 
 1. Open the file.
 
-2. Ensure parameters are set as desired, particularly the `OUTPUT_DIR`.
+2. Ensure parameters are set as desired, particularly the output directory or output filename.
 
 3. Save and exit.
 
@@ -64,7 +68,7 @@ Check out the paper GitHub repository as well:
 
 1. Open the file.
 
-2. Ensure parameters are set as desired, particularly the `OUTPUT_DIR`.
+2. Ensure parameters are set as desired, particularly the output directory or output filename.
 
 3. Save and exit.
 
