@@ -87,10 +87,16 @@ Check out PyDTS GitHub repository which implements the proposed approach:
 - **`Simulations - Regularization - corr.ipynb`**: Large sample size LASSO simulations with correlated covariates (see Settings 12 from Table S2).
 - **`Simulations - SIS-SIS-L.ipynb`**: Sure Independence Screening simulations (see Settings 17, 18, 19 from Table S2).
 - **`Small-sample-size.R`**: R example comparing methods for small sample sizes with the ‘exact’ method (see Settings 1, 2 from Table S2).
+- **`small_sample_results_reader.py`**: results analysis of the R example comparing methods for small sample sizes with the ‘exact’ method (see Settings 1, 2 from Table S2).
 - **`regularization-small-sample-size.py`**: Regularization analysis for small sample sizes with ‘exact’ in Python using PyDTS (see Settings 14, 15).
 - **`TP-FP-small-sample-size.py`**: LASSO grid search true positive-false positive analysis for small sample sizes (see Setting 16).
-- **`Simulations - regularization - FP-FN.ipynb`**: LASSO grid search true positive-false positive analysis for large sample sizes (see Setting 13).
+- **`Simulations - TP-FP small sample size results reader.ipynb`**: Results reader for analysing LASSO grid search true positive-false positive analysis for large sample sizes (see Setting 16).
+- **`Simulations - Regularization-TP-FP.ipynb`**: LASSO grid search true positive-false positive analysis for large sample sizes (see Setting 13).
+- **`Simulations - Regularization-TP-FP results reader.ipynb`**: Results reader for analysing LASSO grid search true positive-false positive analysis for large sample sizes (see Setting 13).
 - **`continuous_bias.R`**: Comparison of continuous and discrete analyses (see Web Appendix A).
 - **`continuous_bias_large_d.R`**: Comparison of continuous and discrete analyses with a large number of time points (see Web Appendix A).
 - **`mimiciv.ipynb`**: MIMIC-IV length-of-stay use-case analysis. Requires specifying the MIMIC-IV 2.0 data directory, output directory, and the `constants.py` file.
 - **`constants.py`**: Constants definition for MIMIC-IV analysis.
+- **`requirements.R`**: R packages requirements.
+- **`requirements.txt`**: Python packages requirements.
+- 
